@@ -1,2 +1,0 @@
-# projectsbyme
-student projects
