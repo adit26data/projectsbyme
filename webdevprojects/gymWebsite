@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Macondo&family=Water+Brush&display=swap"
+        rel="stylesheet">
+    <title>MUSCLE STUDIO</title>
+    <style>
+        html {
+            background: url('https://wallpapercave.com/wp/wp2832101.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow-x: hidden
+        }
+
+        .build {
+            border-radius: 300px;
+            width: 90px;
+            height: 90px;
+        }
+
+        #page-title {
+            font-family: 'Abril Fatface', cursive;
+            position: relative;
+            color: white;
+            top: -100px;
+            top: -90px;
+            left: 110px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            background-color: transparent;
+            border-color: white;
+            border-style: solid;
+            cursor: pointer;
+            border-radius: 112px;
+            position: relative;
+            width: 600px;
+            height: 60px;
+            left: 387px;
+            top: -161px;
+        }
+
+        .navbar ul {
+            overflow: hidden;
+
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 10px;
+        }
+
+        .navbar li a {
+            position: relative;
+            top: -10px;
+            float: left;
+            text-decoration: none;
+            padding: 3px 3px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+
+        }
+
+        .navbar li a:hover {
+            color: rgb(174, 33, 33);
+
+        }
+
+        .search {
+            position: relative;
+            top: -10px;
+            float: right;
+            color: black;
+            padding: 12px 12px;
+            margin: 2px 4px;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 3px 17px;
+            width: 40px;
+        }
+
+        .container {
+            width: 500px;
+            height: 430px;
+            display: block;
+            border: solid 2px white;
+            margin: 100px 80px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 20px;
+            position: relative;
+            top: -150px;
+        }
+
+        .form-group input {
+            margin: 9px auto;
+            width: 200px;
+            padding: 5px;
+            border-radius: 12px;
+            background: transparent;
+        }
+
+        .form-group input[type="text"] {
+            color: white;
+        }
+
+        .temp::-webkit-input-placeholder {
+            font-family: 'Abril Fatface', cursive;
+        }
+
+        #welcome-tag {
+            display: block;
+            font-family: 'Abril Fatface', cursive;
+            color: red;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .btn,
+        .btn2 {
+            width: 120px;
+            height: 20px;
+            color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: transparent;
+            cursor: pointer;
+            position: relative;
+            top: 10px;
+        }
+
+        .btn:hover,
+        .btn2:hover {
+            background-color: white;
+            color: black;
+            transition: 1s ease;
+        }
+
+        .btn::before,
+        .btn2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50px;
+            background: transparent;
+            height: 50%;
+            width: 100%;
+            transform: perspective(1em)rotateX(48deg)scale(1, 0.35);
+            filter: blur(8px);
+            transition: 1s ease;
+        }
+
+        .btn:hover::before,
+        .btn2:hover::before {
+            background: white;
+            top: 70px;
+        }
+
+        .btn2 {
+            height: 40px;
+            position: relative;
+            top: -210px;
+            left: 1250px;
+            font-family: 'Abril Fatface', cursive;
+        }
+
+        #end-title {
+            position: relative;
+            color: white;
+            font-family: 'Abril Fatface', cursive;
+            top: 100px;
+            left: 400px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="./dumbbell.jpeg" alt="" class="build">
+        </div>
+        <div id="page-title">
+            <h1> MUSCLE STUDIO</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="$">HOME</a></li>
+                <li><a href="$">SERVICES</a></li>
+                <li><a href="$">ABOUT</a></li>
+                <li><a href="$">CONTACT US</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website"></input>
+                </div>
+            </ul>
+        </nav>
+        <button class="btn2">EMAIL US</button>
+
+    </header>
+    <div class="container">
+        <h1 id="welcome-tag">Be a part of the best gym in VIT VELLORE</h1>
+        <form action="backend.php">
+            <div class="form-group">
+                <input type="text" class="temp" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="temp" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" class="temp" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" class="temp" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" class="temp" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" class="temp" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+        <div id="end-title">
+            <h1>
+                COPYRIGHT @ 1992
+                THIS IS A PROPERTY OF MUSCLE STUDIO PVT.LTD
+            </h1>
+        </div>
+    </div>
+</body>
+
+</html>
